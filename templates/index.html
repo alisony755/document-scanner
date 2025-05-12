@@ -1,13 +1,38 @@
-<!DOCTYPE html>
 <html>
 <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  
   <title>Upload Document</title>
+  <style>
+    html {
+      background: #6a92f2;
+    }
+    
+    body {
+      font-family: "Hanken Grotesk", sans-serif;
+      padding: 100px 20px;
+      background: white;
+      margin: auto;
+      width: 40%;
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 30px;
+    }
+  </style>
 </head>
 <body>
   <h1>Upload Document to Scan</h1>
+  <br>
   <form action="/scan" method="post" enctype="multipart/form-data">
     <input type="file" name="file" required>
     <button type="submit">Scan</button>
   </form>
 </body>
 </html>
+
+<!-- Preview of file with name and little icon after uploaded -->
